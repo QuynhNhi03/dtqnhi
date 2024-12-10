@@ -1,0 +1,745 @@
+@charset "UTF-8";
+/* CSS Document */
+*{scroll-behavior: smooth}
+body
+{
+	/*background-image: url("../images/bg.jpg");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 100%;	
+	background-attachment: fixed;*/
+	background-color: #FFF1F7;
+	color: rgba(0,0,0,0.7);
+	font-size: 14px;
+	font-family:"SVN-Beast", Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin: 0;
+}
+
+.font-special,h2,h4
+{
+  font-family:'SVN-Billo';
+  color: #A37BFF;  
+}
+
+
+.font-special,h1
+{ 
+	font-family:'SVN-Bira';
+	color: #FF7998;
+}
+.font-special,h3
+{
+  font-family:'SVN-Billo';
+  color: #FFFFFF;  
+}
+
+
+h1
+{
+	font-size: 36px;
+}
+
+@media (min-width: 600px)
+{
+	h1 
+		{
+			font-size: 32px; line-heght:0.8rem;
+		}
+}
+
+h2 {font-size: 3vw}
+h3 {font-size: 2.5vw}
+/*h4 {font-size: 2vw}*/
+h5 {font-size: 1.5vw}
+h6 {font-size: 1vw}
+/*h1,h2,h3,h4,h5,h6 { border: 1px solid green}*/
+h4 {font-size: 16px;}
+
+h5
+{
+	font-family: 'SVN-Beast';
+	font-size: 20px;
+	color: #A37BFF ;
+	
+}
+
+
+p
+{
+	font-family: 'SVN-Beast';
+	font-size: 14px;
+	color: rgba(0,0,0,0.7);
+}
+
+
+/* cho nay bat dau dinh dang mau chu cho web*/
+.text-primary
+{
+	color: #A37BFF
+}
+
+.text-secondary
+{
+	color: #FFA7CE
+}
+.text-light
+{
+	color: #FFFFFF
+}
+.text-dark
+{
+	color: rgba(0,0,0,0.8)
+}
+/*--- dinh dang mau nen background cho web-----*/
+.bg 
+{
+	background-color: #FEFEFE;
+}
+.bg-primary
+{
+	background-color: #CE97FF;
+}
+.bg-primary-10
+{
+	background-color: rgba(154,14,179,0.08)
+}
+.btn-primary
+{
+	background-color: #FAC7DE;
+	padding: 5px 20px;
+	color:#FFFFFF;
+	text-decoration: none;
+	border-radius: 15px;
+	transition: all 1s;
+}
+.btn-primary:hover
+{
+ background-color: #FF6297;
+ box-shadow: 0 5px 10px rgba(187,103,149,1.00)
+}
+.bg-secondary
+{background-color: #FCCCE9;}
+/*--------------dinh dang vung section-----------------------------*/
+
+section
+{
+	height: 90vh; 
+	border: 0px;
+	
+}
+
+   
+
+
+*{ box-sizing: border-box} /* giữ đường vien vao trong*/
+.container
+{
+	width: 90%; margin: auto /* box container sẽ chiếm 90% độ rộng màn hình và nằm giữa*/
+}
+
+@media (min-width:600px) /*thiet bi mobile*/
+{
+		.container
+	{
+		width: 80%; margin: auto 
+	}
+}
+.col-1 { width: 8.33%; }
+.col-2{width: 16.66%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width: 41.66%}
+.col-6{ width: 50%}
+.col-7{ width: 58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+/* phải cho các cột vào dòng row, thì mới dược sắp nằm cạnh nhau cho đủ 100%*/
+.row{ display: flex; flex-wrap: wrap}
+/*tất cả các cột đều có đường viền đỏ và đẩy bờ lề vào trong là 15px*/
+[class*="col-"]
+{
+  padding: 0px;
+  border: 0px;
+}
+.img-100{ width: 100%; height: auto;}
+
+@media (min-width:600px) /*thiet bi ipad*/
+{
+	.col-md-1 { width: 8.33%; }
+	.col-md-2{width: 16.66%}
+	.col-md-3{ width: 25%}
+	.col-md-4{ width: 33.33%}
+	.col-md-5{ width: 41.66%}
+	.col-md-6{ width: 50%}
+	.col-md-7{ width: 58.33%}
+	.col-md-8{ width: 66.66%}
+	.col-md-9{ width: 75%}
+	.col-md-10{ width: 83.33%}
+	.col-md-11{ width: 91.66%}
+	.col-md-12{ width: 100%}
+}
+@media (min-width:960px) /*thiet bi pc*/
+{
+	.col-lg-1 { width: 8.33%; }
+	.col-lg-2{width: 16.66%}
+	.col-lg-3{ width: 25%}
+	.col-lg-4{ width: 33.33%}
+	.col-lg-5{ width: 41.66%}
+	.col-lg-6{ width: 50%}
+	.col-lg-7{ width: 58.33%}
+	.col-lg-8{ width: 66.66%}
+	.col-lg-9{ width: 75%}
+	.col-lg-10{ width: 83.33%}
+	.col-lg-11{ width: 91.66%}
+	.col-lg-12{ width: 100%}
+}
+.text-center
+{
+  text-align: center;
+  text-align: left;
+}
+.content-center
+{text-align:center;}
+
+/*--- dinh dang trong flex---*/
+.d-flex{ display: flex}
+
+/*--- dẩy các box trong flexc theo chiều ngang*/
+.justify-content-start{justify-content:flex-start}
+.justify-content-end{justify-content:flex-end}
+.justify-content-center{justify-content:center}
+.justify-content-between{justify-content:space-between}
+.justify-content-around{justify-content:space-around}
+
+/*--- đẩy các cột trong flex theo chiều dọc*/
+.align-items-start{ align-items: flex-start}
+.align-items-end{ align-items: flex-end}
+.align-items-center{ align-items:center}
+.align-items-stretch{ align-items:stretch}
+
+#home
+{
+	background-image: url( "../images/bg-min.gif")
+	
+}
+#about
+{
+	background-color: #FEFEFE;
+	
+}
+@font-face
+{
+    font-family: 'SVN-Beast';
+    src: url('SVN-Beast.eot');
+    src: url('SVN-Beast.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Beast.woff2') format('woff2'),
+        url('SVN-Beast.woff') format('woff'),
+        url('SVN-Beast.ttf') format('truetype'),
+        url('SVN-Beast.svg#SVN-Beast') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SVN-Billo';
+    src: url('SVN-Billo.eot');
+    src: url('SVN-Billo.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Billo.woff2') format('woff2'),
+        url('SVN-Billo.woff') format('woff'),
+        url('SVN-Billo.ttf') format('truetype'),
+        url('SVN-Billo.svg#SVN-Billo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SVN-Bira';
+    src: url('SVN-Bira.eot');
+    src: url('SVN-Bira.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Bira.woff2') format('woff2'),
+        url('SVN-Bira.woff') format('woff'),
+        url('SVN-Bira.ttf') format('truetype'),
+        url('SVN-Bira.svg#SVN-Bira') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+.mx-auto{ margin-left: auto; margin-right: auto}
+.mt-40{ margin-top: 40px}
+.py-40{padding-top:40px; padding-bottom: 40px }
+.p-100{ padding: 100px}
+.mt-10{ margin-top: 10px}
+.mt-20{ margin-top: 20px}
+.mt-60{ margin-top:60px}
+.mb-50{ margin-bottom:50px}
+.py-60{padding-top:60px; padding-bottom: 60px }
+.my-0{ margin-top:0; margin-bottom:0;}
+
+/*-------Style cho menu responsive-----*/
+section {padding-top: 100px; padding-bottom: 50px;}
+header nav
+{
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.05);
+    margin-bottom: 10px;
+    position: relative;
+}
+nav .btn-toggle 
+{
+    position: absolute;
+    right: 0
+}
+nav .container{ position:relative}
+nav .btn-toggle 
+{
+    position:absolute;
+    right:0;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    border: 2px #8C0762;
+    background: #F8E3F6
+}
+nav .brand 
+{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+nav .menu
+{
+   /* border: 1px solid red*/
+}
+nav .menu ul 
+{ /*bo cham dau dong trong unorderlist*/
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+nav .menu ul li
+{
+    position: relative
+}
+nav .menu ul li a 
+{
+    text-decoration: none;
+    padding : 7px;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    color: #666
+}
+nav .menu ul li a:hover
+{
+    background-color: #F8E3F6
+}
+.menu {display:none}
+
+@media (min-width:900px)
+{
+.menu {display:block !important;}
+	
+nav .btn-toggle{display:none}
+nav .container, nav .menu ul
+	{
+		display:flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+nav .menu ul li a
+{
+	border-bottom: none;
+	padding: 7px 25px;
+}
+
+
+header
+{
+position: fixed;
+width: 100%;
+left: 0; top:0;
+z-index: 99999;
+}
+header nav
+{
+	background-color: #FFF7FB;
+	padding-top: 10px;
+}
+.fade-in-text 
+{
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.typing-effect {
+  font-size: 3rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.line1, .line2 , .line3{
+  display: inline-block;
+  width: 0; /* Bắt đầu với chiều rộng 0 */
+  overflow: hidden;
+  
+}
+
+.line1 {
+  color: #A37BFF; /* Màu cho "Hi! I AM" */
+  animation: typingLine1 1.5s steps(6, end) forwards, blinkCursor 0.3s step-end infinite;
+}
+
+.line2 {
+  color: #FF7998; /* Màu cho "Quynh Nhi" */
+  animation: typingLine2 1.5s steps(14, end) forwards 2s, blinkCursor 0.3s step-end infinite;
+	
+}
+
+.line3 {
+  font-size: 16px;
+  color: #333; /* Màu cho "Graphic Design & UI/UX Designer" */
+  animation: typingLine3 1.5s steps(25, end) forwards 3.5s, blinkCursor 0.3s step-end infinite;
+}
+
+@keyframes typingLine1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12ch; /* Số ký tự trong "Hi!" */
+  }
+}
+
+@keyframes typingLine2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 14ch; /* Số ký tự trong "I'm Quynh Nhi" */
+  }
+}
+@keyframes typingLine3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30ch;
+  }
+}
+
+.progress-bar
+{
+background-color: #EFC1FF;
+border-radius: 10px;
+height: 15px;
+margin-top: -10px;
+}
+.progress
+{
+height: 100%;
+border-radius: 10px 0 0 10px;
+font-size: 10px; color: #FFFFFF;
+text-align: right;
+font-weight: 800;
+padding-right: 5px;
+width: 0%; /* Bắt đầu từ 0% */
+animation: fillWidth 2s ease-in-out forwards; /* Animation cho thanh chạy */
+}
+@keyframes fillWidth {
+  from {
+    width: 0%; /* Thanh bắt đầu từ 0% */
+  }
+  to {
+    width: 60%, 75%, 80%, 80%, 85%, 90%; /* Thanh chạy hết chiều dài phần trăm */
+  }
+}
+
+/* Styling for the services section */
+#services {
+  padding: 40px 40px;
+  background: #f9f9f9;
+}
+
+
+#services p {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 30px;
+}
+/* Tạo khoảng cách giữa các cột trong Grid */
+.row > div {
+  margin-bottom: 20px; /* Khoảng cách dưới mỗi cột */
+}
+
+/* Đảm bảo khoảng cách giữa các khung */
+.col-12 {
+  padding: 0 10px; /* Khoảng cách trái và phải giữa các khung */
+}
+
+
+/* Styling for service items */
+.service-item {
+  position: relative;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #F4F4F4; /* Khung stroke màu xám */
+  transition: all 0.3s ease;
+  height: 200px; /* Kích thước cố định cho các khung */
+  flex: 1 1 calc(33.333% - 20px); /* Chiếm 1/3 chiều rộng của row, trừ khoảng cách gap */
+  overflow: hidden;
+  margin-bottom: 20px; /* Khoảng cách dưới mỗi khung */
+}
+/* Title and icon */
+.service-item h4,
+.service-item i {
+  color: #A37BFF; /* Highlight color */
+  margin-bottom: 15px;
+  transition: opacity 0.3s ease;
+}
+
+/* Description text */
+.service-item p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  color: #333;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  line-height: 1.5;
+}
+
+/* Hover effect */
+.service-item:hover {
+  background: #f4f4f4;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-item:hover h4,
+.service-item:hover i {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.service-item:hover p {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.education {
+    background:  #f9fbfd;
+    padding-top:  50px;
+}
+.education-horizontal-timeline {
+    padding: 80px 0;
+}
+
+.timeline-horizontal-border {
+    display:  flex;
+    align-items: center;
+    padding: 26px 0 30px;
+}
+.timeline-horizontal-border i {
+    font-size:  10px;
+    color:  #A37BFF ;
+    margin-right:  5px;
+}
+span.single-timeline-horizontal {
+    display:  inline-block;
+    background: #b2c1ce;
+    height:  1px;
+    width: 380px;
+}
+span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
+
+
+/*Certificate*/
+
+#my-certificates {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.certificate-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Khoảng cách giữa các chứng chỉ */
+  flex-wrap: wrap; /* Đảm bảo rằng các chứng chỉ sẽ xếp xuống hàng khi màn hình nhỏ */
+}
+
+.certificate-item {
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Đảm bảo nội dung nằm dưới cùng */
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.certificate-item img {
+  width: 100%; /* Kích thước ảnh sẽ tự động điều chỉnh theo chiều rộng của khung */
+  height: auto; /* Chiều cao tự động tính theo tỷ lệ của ảnh */
+}
+
+.certificate-info {
+  padding: 15px;
+}
+
+.certificate-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.course-name {
+  font-style: italic;
+}
+
+.certificate-item:hover {
+  background-color: #f9f9f9;
+}
+
+.certificate-item a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+.certificate-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Center the line */
+  width: 0;
+  height: 2px;
+  background-color: #A37BFF; /* Purple pastel color */
+  transition: width 0.3s ease-in-out;
+}
+
+.certificate-item:hover::after {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+#contact {
+  background-color: #FEFEFE; /* Light background color for the section */
+  padding: 40px 0; /* Reduced padding */
+}
+
+.contact-form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px; /* Slightly less rounded for a tighter look */
+}
+
+
+.contact-form-container input[type="text"],
+.contact-form-container input[type="email"],
+.contact-form-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #f8c8d1; /* Pastel pink border for the input fields */
+  border-radius: 8px;
+  margin-bottom: 12px; /* Reduced margin */
+}
+
+.contact-form-container input[type="submit"] {
+  background-color: #f8c8d1; /* Pastel pink background for the button */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-form-container input[type="submit"]:hover {
+  background-color: #f2a0b1; /* Darker pink on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

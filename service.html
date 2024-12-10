@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=decive-width, initial-scale=1">
+<title>QUYNH NHI PORFOLIOt</title>
+	<link rel="stylesheet" href="css/mainStyle.css">
+	<link rel="stylesheet" href="css/all.css">
+</head>
+
+<body style="padding-top: 60px">
+ <header>
+	<nav> 
+		 <div class="container">
+	 <a href="index1.html"><h4>Wynnee</h4></a>
+		
+	 <button type="button" class="btn-toggle">
+	 <i class="fa-solid fa-bars"></i>
+	 </button>
+		
+	<div class="menu">
+		<ul>
+			<li><a href="index.html"><p>Home</p></a></li>
+			<li><a href="about.html"><p>About</p></a></li>
+			<li><a href="service.html"><p>Service</p></a></li>
+			<li><a href="education.html"><p>Education</p></a></li>
+			<li><a href="project.html"><p>Project</p></a></li>
+			<li><a href="contact.html"><p>Contact</p></a></li>
+		</ul>
+		
+	</div>
+	</div>	
+	 </nav>
+	
+	
+	
+	
+	
+	
+	</header>
+	<div class="tieu-de-trang bg-primary row justify-content-center align-items-center py-40">
+	<div class="col-12 col-md-4 content-center">
+		<div class="mt-60 fade-in-text"><h3>Service</h3></div>
+		
+		
+		
+		</div>
+	</div>
+	
+	<section id="services">
+  <div class="container">
+    <div class="row content-center">
+      <div class="col-12 content-center">
+        <h4>What I Do?</h4>
+        <p>I specialize in providing creative services across graphic design, UI/UX design, and image retouching. My goal is to craft visually compelling designs, create intuitive and seamless user experiences, and enhance photos for a professional and polished look. With a strong focus on creativity, precision, and quality, I deliver tailored solutions that bring ideas to life and leave a lasting impression.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center ">
+      <div class="col-12 col-md-4 col-lg-4">
+        <div class="service-item">
+          <h4>Graphic Design</h4>
+          <i class="fa-solid fa-rocket fa-2x"></i>
+          <p>Graphic Design is the art of creating visual content to communicate messages using elements like colors, typography, and images.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4">
+        <div class="service-item">
+          <h4>UI/UX Design</h4>
+          <i class="fa-solid fa-laptop fa-2x"></i>
+          <p>UI/UX Design focuses on creating intuitive user interfaces (UI) and optimizing overall user experiences (UX) to ensure products are functional, enjoyable, and easy to use.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4">
+        <div class="service-item">
+          <h4>Images Retouch </h4>
+          <i class="fa-solid fa-image fa-2x"></i>
+          <p>Image Retouching involves enhancing photos by correcting imperfections, adjusting lighting, and refining details to create a polished, professional appearance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+	<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+	<script src="dist/js/lightbox.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script><script> 
+$(document).ready(function(){
+  $(".btn-toggle").click(function(){
+    $(".menu").slideToggle("slow");
+  });
+});
+</script></body>
+</html>

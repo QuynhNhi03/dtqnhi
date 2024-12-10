@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=decive-width, initial-scale=1">
+<title>QUYNH NHI PORFOLIOt</title>
+	<link rel="stylesheet" href="css/mainStyle.css">
+	<link rel="stylesheet" href="css/all.css">
+</head>
+
+<body style="padding-top: 60px">
+ <header>
+	<nav> 
+		 <div class="container">
+	 <a href="index1.html"><h4>Wynnee</h4></a>
+		
+	 <button type="button" class="btn-toggle">
+	 <i class="fa-solid fa-bars"></i>
+	 </button>
+		
+	<div class="menu">
+		<ul>
+			<li><a href="index.html"><p>Home</p></a></li>
+			<li><a href="about.html"><p>About</p></a></li>
+			<li><a href="service.html"><p>Service</p></a></li>
+			<li><a href="education.html"><p>Education</p></a></li>
+			<li><a href="project.html"><p>Project</p></a></li>
+			<li><a href="contact.html"><p>Contact</p></a></li>
+		</ul>
+		
+	</div>
+	</div>	
+	 </nav>
+	
+	
+	
+	
+	
+	
+	</header>
+	<div class="tieu-de-trang bg-primary row justify-content-center align-items-center py-40">
+	<div class="col-12 col-md-4 content-center">
+		<div class="mt-60 fade-in-text"><h3>Project</h3></div>
+		</div> 
+		</div> 
+	<section id="project" class="bg">
+  <div class="container">
+    <div class="row content-center">
+      <div class="col-12 content-center">
+		  <p class="content-center"><b>Project Overview</b></p>
+
+<p>This portfolio showcases a selection of my design work, including brand identity, poster designs, and UI/UX projects. Each piece reflects my commitment to creating visually appealing and user-friendly designs. Explore the projects to see how I blend creativity with functionality to deliver impactful design solutions.
+
+</p>
+		  <div class="header" id="myHeader">
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="images/Brand_Hieu_08.11_16h-38-min.jpg" style="width:100%">
+	<img src="images/meta1-min.png" style="width:100%">
+    <img src="images/Brand_Hieu_08.11_16h-73-min.jpg" style="width:100%">
+    <img src="images/Brand_Hieu_08.11_16h-85-min.jpg" style="width:100%">
+    <img src="images/meta2-min.png" style="width:100%">
+    <img src="images/qnhi-min.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/Banking-min.jpg" style="width:100%">
+    <img src="images/Booking-min.jpg" style="width:100%">
+    <img src="images/TPBank-min.jpg" style="width:100%">
+	<img src="images/meta3-min.png" style="width:100%">
+    <img src="images/Brand_Hieu_08.11_16h-40-min.jpg" style="width:100%">
+    <img src="images/Brand_Hieu_08.11_16h-63-min.jpg" style="width:100%">
+	<img src="images/BHX-min (1).jpg" style="width:100%">
+      <img src="images/Brand_Hieu_08.11_16h-57-min.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="images/all 2-min.png" style="width:100%">
+	<img src="images/Brand_Hieu_08.11_16h-68-min.jpg" style="width:100%">
+    <img src="images/Brand_Hieu_08.11_16h-01-min.jpg" style="width:100%">
+    <img src="images/Brand_Hieu_08.11_16h-66-min.jpg" style="width:100%">
+    <img src="images/meta4-min.png" style="width:100%">
+ 
+  </div>
+  <div class="column">
+    <img src="images/Banking-min.jpg" style="width:100%">
+    <img src="images/Booking-min.jpg" style="width:100%">
+    <img src="images/TPBank-min.jpg" style="width:100%">
+	<img src="images/meta5-min.png" style="width:100%">
+     <img src="images/Brand_Hieu_08.11_16h-40-min.jpg" style="width:100%">
+    </div>  
+</div>
+		  </div>  
+   
+  </div>  
+</div>
+ </section>
+
+
+
+
+
+
+
+	
+	<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+	<script src="dist/js/lightbox.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script><script> 
+$(document).ready(function(){
+  $(".btn-toggle").click(function(){
+    $(".menu").slideToggle("slow");
+  });
+});
+</script></body>
+</html>
+
+		
